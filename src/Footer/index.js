@@ -7,7 +7,9 @@ export default function Copyright() {
     <Typography
       color='textSecondary'
       align='center'
-      style={{ paddingTop: '10px' }}
+      style={{
+        paddingTop: '20px'
+      }}
     >
       {'Copyright © '}
       <Link color='inherit' href='https://ydvsailendar.github.io/'>
