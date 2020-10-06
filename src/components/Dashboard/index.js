@@ -1,21 +1,8 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import ListProducts from './ListProducts';
 import MovingProducts from './MovingProducts';
-
-const PRODUCTS = gql`
-  query {
-    Products {
-      _id
-      name
-      description
-      thumbnail
-      price
-      count
-      stock
-    }
-  }
-`;
+import PRODUCTS from '../../graphql/queries/product';
 
 export default function Dashboard() {
   const { loading, error, data } = useQuery(PRODUCTS);
